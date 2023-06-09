@@ -30,7 +30,7 @@ fun WeatherDataDto.toWeatherDataMap(): Map<Int,List<WeatherData>>{
                 windSpeed = windSpeed,
                 humidity = humidity,
                 weatherType = WeatherType.fromWMO(weatherCode)
-            )
+            ),
         )
     }.groupBy{
         it.index / 24
