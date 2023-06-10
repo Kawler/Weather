@@ -67,13 +67,15 @@ fun DrawerBody(
             ){
                 Icon(
                     imageVector = item.icon,
-                    contentDescription = item.contentDescription
+                    contentDescription = item.contentDescription,
+                    tint = Color.White
                 )
                 Spacer(modifier = Modifier.width(16.dp))
                 Text(
                     text = item.title,
                     style = itemTextStyle,
-                    modifier = Modifier.weight(1f)
+                    modifier = Modifier.weight(1f),
+                    color = Color.White
                 )
             }
         }

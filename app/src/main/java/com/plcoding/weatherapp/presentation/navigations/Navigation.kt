@@ -1,4 +1,4 @@
-package com.plcoding.weatherapp.presentation.ui
+package com.plcoding.weatherapp.presentation.navigations
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
@@ -9,6 +9,7 @@ import com.plcoding.weatherapp.presentation.screens.AboutScreen
 import com.plcoding.weatherapp.presentation.screens.GraphScreen
 import com.plcoding.weatherapp.presentation.screens.ListScreen
 import com.plcoding.weatherapp.presentation.screens.MainScreen
+import com.plcoding.weatherapp.presentation.ui.Screen
 
 @Composable
 fun Navigation(viewModel: WeatherViewModel){

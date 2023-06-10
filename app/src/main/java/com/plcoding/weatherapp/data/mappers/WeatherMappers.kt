@@ -48,6 +48,7 @@ fun WeatherDto.toWeatherInfo(): WeatherInfo{
     }
     return WeatherInfo(
         weatherDataPerDay = weatherDataMap,
-        currentWeatherData = currentWeatherData
+        currentWeatherData = currentWeatherData,
+        size = weatherDataMap.size
     )
 }

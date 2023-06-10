@@ -10,6 +10,7 @@ import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.plcoding.weatherapp.R
+import com.plcoding.weatherapp.presentation.ui.theme.DeepBlue
 
 @Composable
 fun AppBar(
@@ -19,7 +20,7 @@ fun AppBar(
         title = {
             Text(text = stringResource(id = R.string.app_name))
         },
-        backgroundColor = MaterialTheme.colors.primary,
+        backgroundColor = DeepBlue,
         contentColor = MaterialTheme.colors.onPrimary,
         navigationIcon = {
             IconButton(onClick = onNavigationIconClick) {
