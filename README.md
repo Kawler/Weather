@@ -9,7 +9,7 @@
   <li>Данные погоды получаются с: https://open-meteo.com/</li>
 </ul>
 <h3>Скрины из приложения</h3>
-![Home screen](https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223638.png)
-![List screen](https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223646.png)
-![Graph screen](https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223652.png)
-![About screen](https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223656.png)
+<img src="https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223638.png"/>
+<img src="https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223646.png"/>
+<img src="https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223652.png"/>
+<img src="https://github.com/Kawler/ReadMd/blob/main/Screenshot_20230611-223656.png"/>
