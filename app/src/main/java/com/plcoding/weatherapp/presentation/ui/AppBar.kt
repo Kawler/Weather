@@ -2,12 +2,12 @@ package com.plcoding.weatherapp.presentation.ui
 
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import com.plcoding.weatherapp.R
 import com.plcoding.weatherapp.presentation.ui.theme.DeepBlue
@@ -21,7 +21,7 @@ fun AppBar(
             Text(text = stringResource(id = R.string.app_name))
         },
         backgroundColor = DeepBlue,
-        contentColor = MaterialTheme.colors.onPrimary,
+        contentColor = Color.White,
         navigationIcon = {
             IconButton(onClick = onNavigationIconClick) {
                 Icon(

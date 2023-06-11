@@ -4,4 +4,9 @@
     <style name="Theme.WeatherApp" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">#1B3B5A</item>
     </style>
+
+    <style name="Theme.WeatherApp.Starting" parent="Theme.WeatherApp">
+        <item name="android:windowBackground">@drawable/splash_img</item>
+        <item name="android:statusBarColor">#1a3350</item>
+    </style>
 </resources>

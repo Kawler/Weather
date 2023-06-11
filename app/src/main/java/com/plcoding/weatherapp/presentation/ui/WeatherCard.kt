@@ -1,6 +1,5 @@
 package com.plcoding.weatherapp.presentation.ui
 
-import android.text.Layout.Alignment
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -28,6 +27,7 @@ import com.plcoding.weatherapp.presentation.WeatherState
 import java.time.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
+//Weather card on the home screen
 @Composable
 fun WeatherCard(
     state: WeatherState,

@@ -4,7 +4,7 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.keyframes
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
-import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,7 +24,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
@@ -54,7 +53,7 @@ fun DefaultDisplay(viewModel: WeatherViewModel, currentDate: LocalDate, y: Int, 
             isVisible = fabVisibility,
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
-                .background(DeepBlue)
+                .background(DarkBlue)
         )
         LazyColumn(
             modifier = Modifier
@@ -88,15 +87,16 @@ fun DefaultDisplay(viewModel: WeatherViewModel, currentDate: LocalDate, y: Int, 
 @Composable
 fun ButtonsRow(navController: NavController, isVisible: Boolean, modifier: Modifier){
     val density = LocalDensity.current
+    //Below is animation options
     AnimatedVisibility(
         modifier = modifier,
         visible = isVisible,
-        enter = slideInVertically {
+        exit = slideOutVertically {
             with(density) { 40.dp.roundToPx() }
-        } + fadeIn(),
-        exit = fadeOut(
+        } + fadeOut(),
+        enter = fadeIn(
             animationSpec = keyframes {
-                this.durationMillis = 60
+                this.durationMillis = 0
             }
         )
     ) {

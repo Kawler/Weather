@@ -12,7 +12,7 @@ private data class IndexedWeatherData(
     val index: Int,
     val data: WeatherData
 )
-
+//Mapping data
 fun WeatherDataDto.toWeatherDataMap(): Map<Int,List<WeatherData>>{
     return time.mapIndexed {
         index, time ->

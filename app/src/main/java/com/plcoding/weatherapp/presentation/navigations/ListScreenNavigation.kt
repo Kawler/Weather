@@ -11,6 +11,7 @@ import com.plcoding.weatherapp.presentation.screens.WorkDaysDisplay
 import com.plcoding.weatherapp.presentation.ui.Screen
 import java.time.LocalDate
 
+//Purely for list screen
 @Composable
 fun ListScreenNavigation(viewModel: WeatherViewModel, currentDate: LocalDate, y: Int){
     val navListController = rememberNavController()

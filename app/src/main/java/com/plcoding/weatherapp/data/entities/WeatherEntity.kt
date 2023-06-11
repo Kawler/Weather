@@ -4,6 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+/*TODO*/
 @Entity
 data class WeatherEntity(
     @PrimaryKey val id: Int,

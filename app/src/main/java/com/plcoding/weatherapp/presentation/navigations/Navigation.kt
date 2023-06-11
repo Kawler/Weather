@@ -11,6 +11,7 @@ import com.plcoding.weatherapp.presentation.screens.ListScreen
 import com.plcoding.weatherapp.presentation.screens.MainScreen
 import com.plcoding.weatherapp.presentation.ui.Screen
 
+//Navigation for drawer
 @Composable
 fun Navigation(viewModel: WeatherViewModel){
     val navController = rememberNavController()

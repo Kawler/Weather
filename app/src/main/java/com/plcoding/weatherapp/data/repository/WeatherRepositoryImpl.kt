@@ -5,7 +5,6 @@ import com.plcoding.weatherapp.data.remote.WeatherAPI
 import com.plcoding.weatherapp.domain.repository.WeatherRepository
 import com.plcoding.weatherapp.domain.util.Resource
 import com.plcoding.weatherapp.domain.weather.WeatherInfo
-import java.lang.Exception
 import javax.inject.Inject
 
 class WeatherRepositoryImpl @Inject constructor(

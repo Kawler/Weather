@@ -13,6 +13,7 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 import javax.inject.Inject
 import kotlin.coroutines.resume
 
+//Receiving location
 @ExperimentalCoroutinesApi
 class DefaultLocationTracker @Inject constructor(
     private val locationClient: FusedLocationProviderClient,
@@ -35,7 +36,6 @@ class DefaultLocationTracker @Inject constructor(
         if(!hasAccessFineLocationPermission || !hasAccessCoarseLocationPermission || !isGpsEnabled){
             return null
         }
-
         return suspendCancellableCoroutine { cont->
             locationClient.lastLocation.apply {
                 if(isComplete){

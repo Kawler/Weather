@@ -1,35 +1,15 @@
 package com.plcoding.weatherapp.presentation.screens
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.plcoding.weatherapp.presentation.HourlyWeatherDisplay
-import com.plcoding.weatherapp.presentation.WeatherForecast
-import com.plcoding.weatherapp.presentation.WeatherState
 import com.plcoding.weatherapp.presentation.WeatherViewModel
 import com.plcoding.weatherapp.presentation.navigations.ListScreenNavigation
 import com.plcoding.weatherapp.presentation.ui.AppBar
@@ -37,10 +17,7 @@ import com.plcoding.weatherapp.presentation.ui.DrawerBody
 import com.plcoding.weatherapp.presentation.ui.DrawerHeader
 import com.plcoding.weatherapp.presentation.ui.MenuItem
 import com.plcoding.weatherapp.presentation.ui.Screen
-import com.plcoding.weatherapp.presentation.ui.theme.DarkBlue
-import com.plcoding.weatherapp.presentation.ui.theme.DeepBlue
 import kotlinx.coroutines.launch
-import java.lang.Exception
 import java.time.LocalDate
 
 @Composable
@@ -87,7 +64,7 @@ fun ListScreen(viewModel: WeatherViewModel, navController: NavController){
                     id = "about",
                     title = "About",
                     contentDescription = "Go to about screen",
-                    icon = Icons.Default.Home
+                    icon = Icons.Default.Info
                 )
             ), onItemClick = {
                 when(it.id){

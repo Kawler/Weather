@@ -1,7 +1,6 @@
 package com.plcoding.weatherapp.presentation.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -12,8 +11,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
@@ -26,7 +23,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.plcoding.weatherapp.presentation.WeatherForecast
 import com.plcoding.weatherapp.presentation.WeatherViewModel
-import com.plcoding.weatherapp.presentation.ui.Screen
 import com.plcoding.weatherapp.presentation.ui.theme.DarkBlue
 import com.plcoding.weatherapp.presentation.ui.theme.DeepBlue
 import java.time.LocalDate
@@ -55,6 +51,7 @@ fun WeekendsDisplay(viewModel: WeatherViewModel, currentDate: LocalDate, y: Int,
                 .fillMaxHeight()
         ) {
             items(y){ index ->
+                //Checks name of the day
                 if (currentDate.plusDays(index.toLong()).dayOfWeek.name == "SATURDAY" || currentDate.plusDays(index.toLong()).dayOfWeek.name == "SUNDAY"){
                     Row(
                         Modifier.padding(15.dp, 0.dp)
